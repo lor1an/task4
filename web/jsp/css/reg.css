@@ -1,0 +1,70 @@
+/* 
+    Document   : reg
+    Created on : 05.06.2013, 17:01:36
+    Author     : lor1an
+    Description:
+        Purpose of the stylesheet follows.
+*/
+
+body{
+    font:13px Arial, sans-serif;
+}
+
+p span:first-of-type{
+    display:inline-block;
+    width:82px;
+    font-weight:bold;
+}
+
+p:nth-of-type(7){
+    margin-top:32px;
+    font-weight:bold;
+}
+p:last-child span:first-child{
+
+    display:inline-block;
+    width:62px;
+    height:28px;
+    vertical-align:middle;
+    margin-right:20px;
+}
+
+input:valid + span:after{
+    content:url(http://savepic.ru/4440861.png);
+    padding-left:8px;
+}
+input:invalid + span:after{
+    content:url(http://savepic.org/3354240.png);
+    padding-left:8px;
+}
+input[type="name"]+span+span:after{
+    content:"*Enter your name with a capital letter.";
+    padding-left:8px;
+    font:10px  Arial, sans-serif;
+    color:#444;
+}
+input[type="surname"]+span+span:after{
+    content:"*Enter your surname with a capital letter.";
+    padding-left:8px;
+    font:10px  Arial, sans-serif;
+    color:#444;
+}input[type="age"]+span+span:after{
+    content:"*If you are under the age of 6, you are not able to register.";
+    padding-left:8px;
+    font:10px  Arial, sans-serif;
+    color:#444;
+}input[type="username"]+span+span:after{
+    content:"*Username can not be less than 4 characters and must begin with a letter. You can use letters, numbers and _.";
+    padding-left:8px;
+    font:10px  Arial, sans-serif;
+    color:#444;
+}input[type="password"]+span+span:after{
+    content:"*Use at least 6 characters.";
+    padding-left:8px;
+    font:10px  Arial, sans-serif;
+    color:#444;
+}
+
+.subo{
+    width: 90px; 
+}
